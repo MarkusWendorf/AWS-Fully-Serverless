@@ -1,5 +1,5 @@
 const exec = require('child_process').exec;
-const bucket = require("../config").Bucket;
+const bucket = require("../config").BucketS3;
 
 exec("aws s3 cp ./index.html s3://" + bucket,
     (error) => error ? console.log(error) : console.log("Upload index.html successful"));

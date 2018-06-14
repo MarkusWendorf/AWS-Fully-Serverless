@@ -67,8 +67,6 @@ class PostsPage extends React.Component<Props, State> {
     }
 
     getPosts = () => {
-        this.setState({loading: true});
-
         fetchPosts().then((json: any) => {
             this.setState({posts: json.data, error: json.error, loading: false, message: ""});
         })
@@ -76,6 +74,7 @@ class PostsPage extends React.Component<Props, State> {
 
     createNewPost = (event: any) => {
         event.preventDefault();
+        this.setState({loading: true});
 
         createPost({message: this.state.message})
             .then(() => this.getPosts());

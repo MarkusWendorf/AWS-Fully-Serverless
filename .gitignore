@@ -1,3 +1,6 @@
 **/.serverless
 **/.idea
 **/node_modules
+**/dist
+**/*.js.map
+frontend/src/*.js

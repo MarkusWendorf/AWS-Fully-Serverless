@@ -1,4 +1,4 @@
-const api = "https://ekqvl2bwbk.execute-api.eu-central-1.amazonaws.com/dev/";
+const api = "https://9374ks8p78.execute-api.eu-central-1.amazonaws.com/dev/";
 
 export const fetchPosts = (): any => {
     return fetch(api + "posts").then(response => response.json())
