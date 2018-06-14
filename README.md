@@ -19,11 +19,11 @@ Additionally:
 Fill in config.json
 ```javascript
 {
-  "AcmCertArn": "arn:aws:acm:us-east-1:xxxxxx",
-  "Domain": "mydomain.com",
-  "HostedZoneRoute53": "xxxxxxxxxx",
-  "BucketS3": "mybucket",
-  "TableDynamoDB": "Posts"
+  "AcmCertArn": "arn:aws:acm:us-east-1:xxxxxx", // existing certificate
+  "Domain": "mydomain.com", // your existing domain
+  "HostedZoneRoute53": "xxxxxxxxxx", // hosted zone id for that domain
+  "BucketS3": "mybucket", // choose a bucket name, will be created for you
+  "TableDynamoDB": "Posts" // choose a table name, will be created for you
 }
 ```
 
