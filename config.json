@@ -1,0 +1,7 @@
+{
+  "AcmCertArn": "arn:aws:acm:us-east-1:420912396104:certificate/3fff0462-efde-46e2-a8ee-cc2c353b5075",
+  "Domain": "irrlicht.io",
+  "HostedZoneRoute53": "Z2K9MXPAX2IOTP",
+  "BucketS3": "website.irrlicht.io",
+  "TableDynamoDB": "Posts"
+}

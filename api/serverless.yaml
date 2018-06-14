@@ -1,0 +1,31 @@
+service: TestAPI
+
+provider:
+  name: aws
+  region: eu-central-1
+  role: arn:aws:iam::420912396104:role/LambdaDefault
+  environment:
+    PostsTable: Posts
+
+functions:
+  CreatePost:
+    handler: createPost.handler
+    runtime: nodejs8.10
+    timeout: 10
+    memorySize: 128
+    events:
+      - http:
+         path: /posts
+         method: post
+         cors: true
+
+  GetAllPosts:
+    handler: getPosts.handler
+    runtime: nodejs8.10
+    timeout: 10
+    memorySize: 128
+    events:
+      - http:
+         path: /posts
+         method: get
+         cors: true
