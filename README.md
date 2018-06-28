@@ -34,5 +34,5 @@ $ cd frontend\
 $ npm install\
 
 Fill in the endpoint of the api to api.tsx\
-$ npm run build
-$ npm run deploy
+$ npm run build\
+$ npm run deploy\
