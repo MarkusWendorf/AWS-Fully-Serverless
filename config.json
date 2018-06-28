@@ -1,7 +1,4 @@
 {
-  "AcmCertArn": "arn:aws:acm:us-east-1:xxxxxx",
-  "Domain": "domain.com",
-  "HostedZoneRoute53": "xxxxxxxxxx",
-  "BucketS3": "mybucket",
+  "BucketS3": "mybucketfullyserverless",
   "TableDynamoDB": "Posts"
 }
