@@ -31,8 +31,8 @@ $ sls deploy
 
 #### Step 4: Deploy Frontend
 $ cd frontend\
-$ npm install\
+$ npm install
 
 Fill in the endpoint of the api to api.tsx\
 $ npm run build\
-$ npm run deploy\
+$ npm run deploy
