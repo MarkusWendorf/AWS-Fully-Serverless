@@ -9,11 +9,6 @@ A fully serverless application running on AWS.
 * AWS CLI
 * Serverless Framework
 
-Additionally:
-
-* A registered domain (imported to AWS Route 53)
-* A certificate for that domain (request a certificate via AWS Certificate Manager)
-
 #### Step 1: Configure
 
 Fill in config.json
@@ -38,6 +33,6 @@ $ sls deploy
 $ cd frontend\
 $ npm install\
 
-Fill in the endpoint of the api to api.tsx
-$ npm run build\
+Fill in the endpoint of the api to api.tsx\
+$ npm run build
 $ npm run deploy
